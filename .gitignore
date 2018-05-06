@@ -1,0 +1,10 @@
+**/*.pyc
+**/8apps_venv
+*.ipynb
+**/*.zip
+**/opencv
+**/.ipynb_checkpoints
+**/financial_all
+**/218app_virt
+**/__MACOSX
+**/.idea
