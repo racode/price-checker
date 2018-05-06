@@ -4,7 +4,7 @@ import pymongo
 __author__ = "esobolie"
 
 class Database(object):
-    URL = "mongodb://{dbuser}:{dbpassword}@ds039404.mlab.com:39404/heroku_7wfgj110".format(dbuser=os.environ.dbuser, dbpassword=os.environ.dbpassword)
+    URL = "mongodb://{dbuser}:{dbpassword}@ds039404.mlab.com:39404/heroku_7wfgj110".format(dbuser=os.environ.get('dbuser'), dbpassword=os.environ.get('dbpassword'))
     #URL = "mongodb://127.0.0.1:27017"
     DATABASE = None
 
