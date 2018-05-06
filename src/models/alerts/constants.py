@@ -1,8 +1,10 @@
+import os
+
 __author__ = "esobolie"
 
 
-URL = "https://api.mailgun.net/v3/sandbox6870e25898044ae580e2e65a4956ea85.mailgun.org"
-API_KEY = "key-081424db580be45527d852a792e196f5"
-FROM = "Mailgun Sandbox <postmaster@sandbox6870e25898044ae580e2e65a4956ea85.mailgun.org"
+URL = os.environ.get('MAILGUN_URL')
+API_KEY = os.environ.get('MAILGUN_API_KEY')
+FROM = os.environ.get('MAILGUN_FROM')
 ALERT_TIMEOUT = 10
 COLLECTION = "alerts"

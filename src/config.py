@@ -1,6 +1,6 @@
+import os
+
 __author__ = "esobolie"
 
 DEBUG = True
-ADMINS = frozenset([
-    "edgarsoboliev@gmail.com"
-])
+ADMINS = os.environ.get('ADMINS')
