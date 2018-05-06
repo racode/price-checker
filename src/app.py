@@ -9,7 +9,7 @@ from src.models.stores.views import store_blueprint
 __author__ = "esobolie"
 
 app = Flask(__name__)
-app.config.from_object("config")
+app.config.from_object("src.config")
 app.secret_key = "ySDAZb4C6qYkkXbXzhUF2aHY"
 
 
